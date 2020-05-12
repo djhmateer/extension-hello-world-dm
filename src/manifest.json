@@ -1,0 +1,21 @@
+{
+    "name": "Hello World DM",
+    "version": "1.0",
+    "description": "A hello world application to prove workflow into the Chrome Web Store",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "Hello World DM",
+        "default_popup": "./popup/popup.html",
+        "default_icon": "helloworlddm.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://davemateer.com/*" ],
+            "js": [ "/content-script/hello.js" ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "https://davemateer.com/*"
+    ]
+}
