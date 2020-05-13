@@ -1,8 +1,11 @@
 {
-    "name": "Hello World DM",
+    "name": "Hello World simple example to davemateer.com",
     "version": "1.0",
-    "description": "A hello world application to prove workflow into the Chrome Web Store",
+    "description": "A hello world extension to prove workflow into the Chrome Web Store from the blog article on davemateer.com",
     "manifest_version": 2,
+    "icons": {
+      "128": "icon_128.png"
+    },
     "browser_action": {
         "default_title": "Hello World DM",
         "default_popup": "./popup/popup.html",
@@ -15,7 +18,6 @@
         }
     ],
     "permissions": [
-        "activeTab",
         "https://davemateer.com/*"
     ]
 }
